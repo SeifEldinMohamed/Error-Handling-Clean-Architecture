@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
                     }
                     Spacer(modifier = Modifier.height(8.dp))
                     if (viewModel.error != null) {
-                        Text(text = viewModel.error ?: "")
+                        Text(text = viewModel.error?.asString() ?: "")
                     }
                 }
             }

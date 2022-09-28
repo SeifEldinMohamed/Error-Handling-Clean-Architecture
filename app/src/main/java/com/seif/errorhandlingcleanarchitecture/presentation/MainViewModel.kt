@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seif.errorhandlingcleanarchitecture.domain.usecase.SubmitEmailUseCase
 import com.seif.errorhandlingcleanarchitecture.util.Resource
+import com.seif.errorhandlingcleanarchitecture.util.UiText
 import kotlinx.coroutines.launch
 
 class MainViewModel(
@@ -14,7 +15,7 @@ class MainViewModel(
 ) : ViewModel() {
     var email by mutableStateOf("")
         private set
-    var error by mutableStateOf<String?>(null)
+    var error by mutableStateOf<UiText?>(null)
         private set
 
     fun onEmailChanged(email: String) {

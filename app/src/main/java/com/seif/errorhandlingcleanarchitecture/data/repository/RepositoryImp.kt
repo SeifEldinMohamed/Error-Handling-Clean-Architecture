@@ -2,6 +2,7 @@ package com.seif.errorhandlingcleanarchitecture.data.repository
 
 import com.seif.errorhandlingcleanarchitecture.domain.repository.Repository
 import com.seif.errorhandlingcleanarchitecture.util.Resource
+import com.seif.errorhandlingcleanarchitecture.util.UiText
 import kotlinx.coroutines.delay
 import kotlin.random.Random
 
@@ -13,10 +14,10 @@ class RepositoryImp: Repository {
         }
         else {
             if(Random.nextBoolean()) {
-                Resource.Error("Server Error")
+                Resource.Error(UiText.DynamicString("Server Error"))
             }
             else {
-                Resource.Error("not Authenticated Error")
+                Resource.Error(UiText.DynamicString("not Authenticated Error"))
             }
         }
     }
