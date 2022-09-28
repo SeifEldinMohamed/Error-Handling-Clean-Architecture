@@ -1,4 +1,4 @@
-package com.seif.errorhandlingcleanarchitecture.ui.theme
+package com.seif.errorhandlingcleanarchitecture.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

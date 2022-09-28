@@ -1,4 +1,4 @@
-package com.seif.errorhandlingcleanarchitecture.ui.theme
+package com.seif.errorhandlingcleanarchitecture.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
